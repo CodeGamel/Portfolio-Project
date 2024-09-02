@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- Header -->
+<h1 class="headernav" style="color:gold;">Contact Me</h1>                                           
+<head style="background-color: white;"></head>
+<body style = "background-color: grey;"></body>
+<div>
+    <style>
+
+        .paragraph{
+            line-height: 2;
+            text-align: center;
+            font-size: 20px;
+        }
+        
+        .headernav{
+            display:block;
+            padding: 8px;
+            text-align:center;
+            
+        }
+        
+        .active {
+            background-color: #04AA6D;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 20px;
+            padding: 15px;
+            overflow: hidden;
+            background-color: #000000;
+            text-align: center;
+        }
+        
+        li {
+            display: inline;
+        }
+        
+        li a, .dropbtn {
+            display:inline-block;
+            color:rgb(236, 47, 47);
+            text-align: center;
+            padding: 16px 16px;
+            text-decoration: none;
+            text-emphasis-color: White;
+        }
+        
+        li.dropdown{
+            display:inline-block;
+        }
+        
+        .dropdown-content{
+            display:none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            text-align: left;
+        }
+        
+        .dropdown-content a {
+            color:black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        
+        .dropdown-content a:hover {background-color: #f1f1f1;}
+        
+        .dropdown:hover .dropdown-content {
+            
+            display:block;
+        }
+        
+        li a:hover, dropdown:hover .dropbtn {
+            background-color: #111;
+        }
+        </style>
+        
+    </div>
+    <div>
+        <nav class="headernav"></nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contactpage.html">Contact Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li> 
+
+                <li class = "dropdown">
+                  <a href="javascript:void(0)" class="dropbtn">Socials</a>
+                  <div class="dropdown-content">
+                      <a href = "LINK TO IG"> Instagram</a>
+                      <a href = "LINK TO FB"> Facebook</a>
+                      <a href = "LINK TO X"> X</a>
+                    </div>
+                </li>
+        
+            </ul>
+        </nav>
+        <div>
+</div>
+</ul>                                           
+<form>
+    <!-- contact -->
+    <section id = "contact">
+        <h2> Please fill this information:</h2>
+        <form id ="Contact form" action="/submit-form" method="post"></form>
+        <div>
+            <label for="email">Email Address:</label>
+            <input for="email" id="email" name="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" placeholder="example@email.com" required>
+        </div>
+    </section>
+    <br><br>
+    <!-- Date -->
+    <section>
+        <div>
+            <label for="contactDate">Preferred Contact Date:</label>
+            <input type="date" id="contactDate" name="contactDate">
+        </div>
+    </section>
+    <br><br>
+    <!-- Radio -->
+    <fieldset>
+        <legend Preferred Contact Method:></legend>   
+        <div>
+            <!-- Should be making a couple input boxes -->
+            <label for="phoneMethod">Phone Number:</label>
+            <input for ="radio" id="emailMethod" name="contactMethod" value="phone">
+            <label for ="phoneMethod"></label>
+        </div>
+        <div>
+            <label for ="emailMethod">Email:</label>
+            <input for ="radio" id="emailMethod" name="contactMethod" value="email">
+            <label for="emailMethod"></label>
+        </div>
+    </fieldset>
+    <br><br>
+    <!-- checkboxes -->
+    <div>
+        <fieldset>
+
+            <legend>How would you like me to contact you?</legend>
+            <div>
+                <input type="checkbox" id="email" name="interests" value="email">
+                <label for="email">Email</label>
+            </div>
+            <div>
+                <input type="checkbox" id="phone" name="interests" value="phone">
+                <label for="phone">Phone</label>
+            </div>
+        </div>
+    </fieldset>
+    <br><br>
+    <form id="contactform"></form>
+    <div>
+        <label for="inquiryType">Social Media Platform:</label>
+        <select id="inquiryType" name="inquiryType">
+            <option value="" disabled selected>Select your social media platform</option>
+            <option value="https://x.com/">Twitter</option>
+            <option value="https://www.facebook.com/">Facebook</option>
+            <option value="https://www.instagram.com/">Instagram</option>
+        </select>
+    </div>
+    <br>
+    <button type="Submit">Submit</button>
+</body>
+</html>
